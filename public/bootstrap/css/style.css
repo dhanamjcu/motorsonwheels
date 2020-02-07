@@ -1,0 +1,322 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poly',serif;
+    /* background-color: black; */
+
+
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+:root{
+    --deep-matte-grey--: #393f4d;
+    --copper-color--: #feda60;
+    --copper-dark--: #d3b349;
+    --silver-fox--:#d4d4dc;
+    --dark-slate--: #1d1e22;
+    
+}
+.text-dark{
+    color:var(--dark-slate--) !important;
+}
+.sideNav{
+    background-color: blueviolet !important;
+}
+.navbar{
+    background-color: var(--dark-slate--) !important;
+     box-shadow: 0 8px 6px -6px black;
+    
+}
+
+#logo{
+    height: 3.2rem ;
+    width: 10rem ;
+    padding-top: 10px;
+}
+.fontawesome{
+    color: var(--copper-color--);
+}
+
+
+
+.homeSlider img{
+    max-height: 75vh !important;
+    opacity: 0.5;
+}
+.enquiryDiv{
+    background-color: var(--dark-slate--) !important;
+    position: relative;
+    
+}
+
+.home-filter-div{
+    
+    background-color: var(--dark-slate--);
+    position: absolute !important;
+    left: 5%;
+    width: 90%;
+    height: 60vh;
+    top:10%;
+    border-radius: 20px;
+    padding: 25px 0;
+    opacity: 0.8;
+    
+    
+}
+
+.home-filter-div>.row{
+   opacity: unset !important; 
+   color: var(--silver-fox--) !important;
+}
+
+/* button styling start here */
+.active a{
+    color:var(--copper-color--) !important;
+}
+.btn-primary{
+     color: var(--dark-slate--);
+     border: 1px solid var(--copper-color--);
+    
+     /* letter-spacing: .10em; */
+     background-color: var(--copper-color--);
+}
+.btn-primary:hover{
+    color: var(--dark-slate--);
+    background-color: var(--copper-dark--);
+    border: 1px solid var(--copper-dark--);
+    
+}
+
+/* .btn:hover {
+    color: var(--dark-slate--);
+    background-color: var(--copper-color--);
+} */
+.btn-link{
+    border: none;
+    color: var(--copper-color--);
+    background-color: transparent;
+}
+.btn-link:hover{
+    text-decoration: none;
+    background-color: transparent;
+    color:var(--silver-fox--);
+}
+
+.btn-active{
+    position: relative;
+    text-decoration: none !important;
+}
+ .btn-active::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+        background-color: var(--copper-color--);
+        transform: scaleX(1) !important;
+        margin-top: 2px;
+        border-radius: 1px;
+        transform-origin: left;
+        transition: 250ms ease-in;
+    }
+    
+.fancy-btn:hover{
+    background-color: var(--deep-matte-grey--);
+    color: var(--copper-color--);
+    transition: 500ms ease-in-out;
+    transform: scaleX(1);
+
+}
+    
+
+.fancy-link{
+    text-decoration: none;
+    position: relative;
+    padding: 0;
+}
+.fancy-link:hover{
+    color: var(--copper-color--);
+}
+
+
+
+.fancy-link:hover::after {
+    transform: scaleX(1) !important;
+    text-decoration: none;
+
+
+}
+
+.fancy-link::after {
+    content :"";
+    position: absolute;
+    left:0;
+    bottom:-2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--copper-color--);
+    transform: scaleX(0);
+    margin-top:2px ;
+    border-radius: 1px;
+    transform-origin: left;
+    transition: 250ms ease-in;
+}
+.fancy-link:hover::after {
+    transform: scaleX(1) !important;
+    text-decoration: none;
+}
+
+
+/* button styling ends here */
+
+
+/* form and form controls */
+
+
+.loginBg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.9;
+    background-color:var(--dark-slate);
+    position: relative;
+}
+
+.login___form{
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color:var(--dark-slate--);
+    border-radius: 20px;
+    opacity: 0.9;
+    color:var(--silver-fox--);
+}
+.login___form img{
+    height:100px;
+    width: auto;
+    background-color: white;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.login___form{
+
+    border: 1px solid var(--dark-slate--);
+   
+    box-shadow: 0 8px 6px -6px var(--copper-color--);
+
+}
+
+.fas{
+    color:var(--copper-color--);
+}
+ .btn .dark .fas{
+     color: var(--dark-slate--) !important;
+ }
+
+.adContainer{
+  background-color: var(--silver-fox--);
+  height: 100%;
+  }
+
+
+
+.navRibbon{
+    background-color: var(--dark-slate--);
+    padding:25px 0px;
+    /* box-shadow: 0 8px 6px -6px black; */
+   
+}
+.navRibbon  .nav-item a{
+   background-color: transparent;
+    color: var(--copper-color--);
+    border: 2px solid var(--copper-color--);
+    margin-left: 2em;
+}
+.navRibbon .nav-link.active {
+     background-color: var(--copper-color--);
+     margin-left: 2em;
+     color: var(--dark-slate--);
+}
+
+/* ads */
+
+.ads{
+    background-color: var(--deep-matte-grey--);
+    border-radius: 10px;
+    box-shadow: 0 8px 6px -6px black;
+   color:#fff;
+}
+
+
+/* back to top button */
+#back2Top {
+    width: 1.5em;
+    line-height: 1.6em;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    border-radius: 0.25em;
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 0.5em;
+    right: 0;
+    background-color:var(--dark-slate--);
+    color:var(--copper-color--);
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#back2Top:hover {
+    background-color: var(--deep-matte-grey--);
+}
+/***************FOOTER STYLE***************************/
+    .footer-content{
+        min-height: 10em;
+        background-color: var(--deep-matte-grey--);
+        /* border-top: 1px solid var(--silver-fox--); */
+        color: var(--copper-color--);
+        padding: 1em 0;
+        
+    }
+
+    .footer-content ul li{
+        list-style: none;
+    }
+    .footer-content ul li a ,.btn-link{
+        text-decoration: none;
+        color: var(--silver-fox--) !important;
+        box-shadow: 0 8px 8px -8px black;
+    }
+    .footer-content ul li a:hover{
+        color: var(--copper-color--);
+    }
+    .footer-content address{
+        color:var(--silver-fox--);
+    }
+    #footer-logo{
+        width:200px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 1em;
+        border-radius: 1em;
+        
+    }
+
+    #copy-right{
+        background-color: var(--dark-slate--);
+        
+        color: var(--silver-fox--);
+        
+        font-size: 1.1rem;
+    }
+
+
+/****************FOOTER STYLE**************************/
