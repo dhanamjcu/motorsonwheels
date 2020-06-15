@@ -73,5 +73,22 @@
             exit;
         endif;
         
+    }elseif(isset($_POST['sellerEnq'])){
+
+        $user_id = $_POST['sellerEnq'];
+        $sql = "SELECT `name`,`email`,`phone` FROM `users` WHERE `id` = ?";
+       
+        $stmt = $db->prepare($sql);
+        $stmt->bind_param('i',$user_id);
+
+        if($stmt->execute()){
+            $result = $stmt->get_result();
+            $rows = $result->fetch_assoc();
+
+            $status['user'] = $rows;
+            echo json_encode($status);
+            exit;
+        }
+       
     }
 ?>
