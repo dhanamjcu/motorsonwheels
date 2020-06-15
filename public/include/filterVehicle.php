@@ -1,6 +1,6 @@
 <?php
 
- require_once('../../resources/templates/config.php');
+require_once('../../resources/templates/config.php');
 $submitted = false;
 
  if(isset($_POST['carType']) || isset($_POST['carName']) || isset($_POST['carModel']) || isset($_POST['cBodyType']) || isset($_POST['filterSubmit'])) {
@@ -49,14 +49,10 @@ $submitted = false;
          $conditions[] = "bodytype='$cBodyType'";
       }
      
-   
-     // $sql = $query;
-      
       if (count($conditions) > 0) {
         $sql .= " WHERE " . implode(' AND ', $conditions );
-       
       }
-
+      echo $sql; exit;
   
    $result = $db->query($sql);
 
