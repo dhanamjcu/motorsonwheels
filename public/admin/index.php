@@ -4,11 +4,12 @@
 
 <div class="containe-fluid">
    
-        <div class="">
-            <?php include_once(TEMPLATE_BACK.DS.'sidebar.php');?>
-        </div>
-        <div class="main-content">
-            <?php include_once('home.php');?>
+    <?php include_once(TEMPLATE_BACK.DS.'admin_top_nav.php');?>
+    <?php include_once(TEMPLATE_BACK.DS.'sidebar.php');?>
+        <div class="container"></div>
+            <div class="main-content admin_main_content" id="admin_main_content" >
+                <?php include_once('home.php');?>
+            </div>
         </div>
     
 </div>
